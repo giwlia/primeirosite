@@ -1,0 +1,38 @@
+body{
+    background-color:#98FB98 ;
+    
+}
+
+h1 {
+    text-align: center; 
+    font-family: arial;
+    color: white;
+    background-color: black;
+    
+}
+
+h2{
+    text-align: center;
+}
+
+p {
+    font-family: Arial;
+    color:  none;
+}
+
+a{ 
+    color: black;
+}
+
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
