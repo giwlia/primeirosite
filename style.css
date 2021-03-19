@@ -1,5 +1,5 @@
 body{
-    background-color:#98FB98 ;
+    background-color:#87CEFA ;
     width: 80%;
       margin-right: auto;
       margin-left: auto;
@@ -15,6 +15,8 @@ h1 {
 
 h2{
     text-align: center;
+    font-family: arial;
+    background-color: #4682B4;
 }
 
 p {
@@ -28,13 +30,13 @@ a{
 
 
 a:hover {
-  color: red;
+  color: blue;
   background-color: transparent;
   text-decoration: underline;
 }
 
 a:active {
-  color: blue;
+  color: red;
   background-color: transparent;
   text-decoration: underline;
 }
