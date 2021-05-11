@@ -1,5 +1,6 @@
 body{
-  background-color:#87CEFA ;
+  
+  background-image: linear-gradient(to right, darkmagenta,deeppink,blue);
 }
 
 .container{
