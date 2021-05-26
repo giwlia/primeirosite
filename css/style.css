@@ -1,29 +1,61 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   
-  background-image: linear-gradient(to right, darkmagenta,deeppink,blue);
+  background-image: linear-gradient(to right,deeppink,blue);
 }
 
 .container{
   width: 80%;
   margin-right: auto;
   margin-left: auto;
+  position: relative;
 }
 
 header,footer{
-      background-color:rgba(0,0,0,0.9);
-      padding:4%;
+      background-color:rgba(0,0,0); 
+      padding:1%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 1.5em;
+      line-height: 1.5em;
 }
+.menu-opcoes{
+  text-align: center;
+  color: blue;
+}
+.fixo{
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1030;
+      background-color: rgba(0,0,0);
+    }
 
-h1 {
+.ajustes{
+     line-height: 1;
+     text-align: center;
+}
+}
+.ajustes li:hover{
+     background-color: green;
+}
+.centro {
     text-align: center; 
     font-family: arial;
     color: white;
     font-size: 30px;
     margin-top: 1%;
     margin-bottom: 1%;
-    
+    background-color: black;  
     
 }
+
 
 h2{
     text-align: center;
@@ -50,7 +82,7 @@ figure{
 }
 
 a{ 
-    color: black;
+    color: white;
 }
 
 
@@ -67,12 +99,66 @@ a:active {
 }
 
 a:visited{
-  color: plum;
+  color: mediumslateblue;
   background-color: transparent;
   text-decoration: underline; 
 }
+ table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
 
-footer{
-  text-align: center;
-  font-family: Arial
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
+
+@media screen and (max-width: 599px){
+  .container{
+    margin-top: 55%;
+  }
+
+}
+
+@media screen and (min-width: 600px){
+  .container{
+    margin-top: 40%
+  }
+}
+
+
+@media only screen and (min-width: 768px){
+  .container{
+    margin-top: 14%
+  }
+
+  header{
+    flex-direction: row;
+    position: relative;
+    height: 100px;
+  }
+
+  .menu-opcoes{
+    position: absolute;
+    right: 5%;
+    top: 45%;
+  }
+  .menu-opcoes ul, li{
+    display: inline;
+    margin-left: 10px;
+  }
+  .imglogo{
+    position: absolute;
+    top: 20px;
+    left: 3%;
+  }
 }
