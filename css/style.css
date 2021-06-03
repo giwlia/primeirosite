@@ -24,6 +24,17 @@ header,footer{
       font-size: 1.5em;
       line-height: 1.5em;
 }
+.fixorodape{
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      z-index: 1030;
+      background-color: rgba(0,0,0);
+
+}
+
+
 .menu-opcoes{
   text-align: center;
   color: blue;
@@ -55,8 +66,12 @@ header,footer{
     background-color: black;  
     
 }
-
-
+.fundo{
+  background: #fff;
+}
+.conbot{
+  margin-bottom: 140px;
+}
 h2{
     text-align: center;
     font-family: arial;
@@ -161,4 +176,8 @@ tr:nth-child(even) {
     top: 20px;
     left: 3%;
   }
+  .fotolado{
+      float: left;
+      margin-right: 10px;
+}
 }
