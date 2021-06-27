@@ -14,9 +14,11 @@
         <nav class="menu-opcoes">
           <ul class="ajustes">
             <li><a href="index.html">INÍCIO</a></li>
+            <li><a href="index.html">SOBRE</a></li>
             <li><a href="index.html#html">HTML</a></li>
             <li><a href="index.html#css">CSS</a></li>
             <li><a href="javascript.html">JAVA SCRIPT</a></li>
+            <li><a href="index.html#galeria">GALERIA</a></li>
             <li><a href="contato.html">CONTATO</a></li>
           </ul>
         </nav>
@@ -26,26 +28,34 @@
       <h1 class="centro" >Formulário de contato</h1>
       <p style="text-align: center; font-size: 20px;">Entre em contato conosco para resolvermos suas dúvidas</p>
 
-      <form class="fundo">
-        <div>
-          <label>Nome:</label>
-          <input type="text" name="">
+      <div class="fundo">
+      <form>
+        <div class="distancia">
+          <input type="text" placeholder="Digite seu nome">
         </div>
-        <div>
-          <label>Assunto:</label>
-          <input type="text" name="">
+        <div class="distancia">
+          <input type="text" placeholder="Digite o assunto">
         </div>
-        <div>
-          <h3>Sexo:</h3>
+        <div class="distancia">
+          <fieldset>
+          <legend>Sexo:</legend>
           <input type="radio" id="female" name="gender" value="male">
           <label for="male">Feminino</label><br>
           <input type="radio" id="male" name="gender" value="female">
           <label for="female">Masculino</label><br>
           <input type="radio" id="other" name="gender" value="other">
           <label for="other">Outro</label>
+          </fieldset>
         </div>
-        <div>
-          <h3>Gosto musical:</h3>
+        <div class="distancia">
+          <fieldset>
+          <legend> Data de nascimento: </legend>
+        <input type="date" name="">
+      </fieldset>
+      </div>
+        <div class="distancia">
+          <fieldset>
+            <legend>Gosto musical:</legend>
           <input type="checkbox" id="female" name="gender" value="male">
           <label for="male">Rock</label><br>
           <input type="checkbox" id="male" name="gender" value="female">
@@ -54,8 +64,9 @@
           <label for="other">Sertanejo</label>
           <input type="checkbox" id="other" name="gender" value="other">
           <label for="other">Funk</label>
+          </fieldset>
         </div>
-        <div>
+        <div class="distancia">
           <label for="cars">Escolaridade:</label>
           <select id="cars" name="cars">
           <option value="volvo">Fundamental</option>
@@ -64,16 +75,17 @@
           <option value="audi">Especialização</option>
           </select>
         </div>
-        <div>
+        <div class="distancia">
           <label>Sujestão ou dúvida:</label>
-          <textarea name="message" rows="10" cols="30">Digite seu texto.</textarea>
+          <textarea name="message" style="height: 200px; width: 100%;">Digite seu texto.</textarea>
           <br><br>
         </div>
-        <div>
+        <div class="distancia">
           <input type="submit" name="Enviar">
         </div>
       </form>
-      
+      </div>  
+
      </div>
  </div>
 
